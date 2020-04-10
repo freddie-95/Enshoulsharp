@@ -45,7 +45,7 @@ namespace Mastery_Badge_Spammer
 
         public static void OnGameLoad()
         {
-            Menu = new Menu("Mastery Emote Spammer", "masteryemotespammermenu", true);
+            Menu = new Menu("masteryemotespammermenu", "Mastery Emote Spammer", true);
             Menu.Add(new MenuList("mode", "Mode", new[] {"MASTERY", "LAUGH", "DISABLED"}));
             Menu.Add(
                 new MenuList("chatdisrespectmode", "Chat Disrespect Mode",
@@ -87,7 +87,7 @@ namespace Mastery_Badge_Spammer
         private static void OnProcessSpellCast(AIBaseClient sender, AIBaseClientProcessSpellCastEventArgs args)
         {
             var sData = SpellDatabase.GetByName(args.SData.Name);
-            if (Menu.GetValue<MenuBool>("ondodgeskillshot") && sender.IsEnemy && sData != null &&
+            if (Menu.GetValue<MenuBool>("ondodgedskillshot") && sender.IsEnemy && sData != null &&
                 ObjectManager.Player.Distance(sender) < sData.Range)
             {
                 DelayAction.Add(
@@ -155,7 +155,7 @@ namespace Mastery_Badge_Spammer
                 DoEmote();
             }
 
-            switch (Menu.GetValue<MenuList>("chatdisresepctmode").SelectedValue)
+            switch (Menu.GetValue<MenuList>("chatdisrespectmode").SelectedValue)
             {
                 case "DISABLED":
                     break;
