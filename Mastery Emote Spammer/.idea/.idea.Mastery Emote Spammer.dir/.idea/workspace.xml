@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7c0c43f-74a2-474d-a0ce-7fb9cd142be0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Auto Int/AutoInt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Auto Int/AutoInt.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mastery Emote Spammer.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mastery Emote Spammer.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
@@ -83,7 +81,7 @@
       <workItem from="1586358592678" duration="102000" />
       <workItem from="1586358733018" duration="4204000" />
       <workItem from="1586387755359" duration="651000" />
-      <workItem from="1586508178417" duration="824000" />
+      <workItem from="1586508178417" duration="2935000" />
     </task>
     <servers />
   </component>
@@ -101,5 +99,24 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1586509802496" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Program.cs</url>
+          <line>199</line>
+          <properties documentPath="$PROJECT_DIR$/Program.cs" initialLine="199">
+            <startOffsets>
+              <option value="9078" />
+            </startOffsets>
+            <endOffsets>
+              <option value="9135" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

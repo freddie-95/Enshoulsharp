@@ -164,7 +164,7 @@ namespace Mastery_Badge_Spammer
                     {
                         if (DeathsHistory.FirstOrDefault(record => record.Key == en.NetworkId).Value < en.Deaths)
                         {
-                            var championName = en.CharacterName.ToLower();
+                            var championName = en.CharacterName;
                             DeathsHistory.Remove(en.NetworkId);
                             DeathsHistory.Add(en.NetworkId, en.Deaths);
                             if (en.Distance(ObjectManager.Player) < 2000)
@@ -179,7 +179,7 @@ namespace Mastery_Badge_Spammer
                     {
                         if (DeathsHistory.FirstOrDefault(record => record.Key == en.NetworkId).Value < en.Deaths)
                         {
-                            var name = en.Name.ToLower();
+                            var name = en.Name;
                             DeathsHistory.Remove(en.NetworkId);
                             DeathsHistory.Add(en.NetworkId, en.Deaths);
                             if (en.Distance(ObjectManager.Player) < 2000)
@@ -199,7 +199,8 @@ namespace Mastery_Badge_Spammer
                 LastEmoteSpam = Variables.GameTimeTickCount;
                 var mode = Menu.GetValue<MenuList>("mode").SelectedValue;
                 if (mode == "DISABLED") return;
-                Game.SendMasteryBadge();
+                if (mode == "LAUGH") { Game.SendEmote(EmoteId.Laugh); }
+                if (mode == "MASTERY") { Game.SendMasteryBadge(); }
             }
         }
 
